@@ -1,4 +1,4 @@
-import { AuthBindings } from "@refinedev/core";
+import { AuthProvider } from "@refinedev/core";
 import { API_URL, dataProvider } from './data'
 
 //For demo puroses and to make it easier to test the app, you can use the following credentials
@@ -7,7 +7,7 @@ export const authCredentials = {
     password: "demodemo",
 };
 
-export const authProvider: AuthBindings = {
+export const authProvider: AuthProvider = {
     login: async ({ email }) => {
         try {
             //call the login mutation
@@ -31,7 +31,7 @@ export const authProvider: AuthBindings = {
             });
 
             //save the accessToken to localStorage
-            localStorage.setItem("access_token", data.login.access_token);
+            localStorage.setItem("access_token", data.login.accessToken);
 
             return {
                 success: true,
