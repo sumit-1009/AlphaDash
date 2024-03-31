@@ -15,7 +15,9 @@ import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 
 
 import { Home, ForgotPassword, Login, Register  } from './pages'
-import Layout from "./components/layout";
+import { Layout } from "./components/layout";
+import { resources } from './config/resources'
+
 
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
                 notificationProvider={useNotificationProvider}
                 routerProvider={routerBindings}
                 authProvider={authProvider}
+                resources={resources}
                 options={{
                   syncWithLocation: true,
                   warnWhenUnsavedChanges: true,
