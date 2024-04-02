@@ -2,7 +2,7 @@ import React from "react";
 
 import { Layout, Space, theme } from "antd";
 
-import CurrentUser from "../current-user";
+import { CurrentUser } from "../current-user";
 
 const { useToken } = theme;
 
