@@ -109,12 +109,14 @@ import {
   TasksListPage,
 } from "@/routes";
 
+
 import "@refinedev/antd/dist/reset.css";
+import { fromJSON } from "postcss";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <ConfigProvider theme={RefineThemes.Blue}>
+      <ConfigProvider>
         <AntdApp>
           <DevtoolsProvider>
             <Refine

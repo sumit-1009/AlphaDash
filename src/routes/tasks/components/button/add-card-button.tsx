@@ -16,7 +16,8 @@ export const KanbanAddCardButton = ({
   return (
     <Button
       size="large"
-      icon={<PlusSquareOutlined className="md" />}
+      icon={<PlusSquareOutlined 
+        className="md" />}
       style={{
         margin: "16px",
         backgroundColor: "white",
