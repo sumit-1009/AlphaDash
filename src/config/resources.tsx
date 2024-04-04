@@ -13,7 +13,7 @@ export const resources: IResourceItem[] = [
     list: "/",
     meta: {
       label: "Dashboard",
-      icon: <DashboardOutlined />,
+      icon: <DashboardOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />,
     },
   },
   {
@@ -24,7 +24,7 @@ export const resources: IResourceItem[] = [
     edit: "/companies/edit/:id",
     meta: {
       label: "Companies",
-      icon: <ShopOutlined />,
+      icon: <ShopOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />,
     },
   },
   {
@@ -34,7 +34,7 @@ export const resources: IResourceItem[] = [
     edit: "/tasks/edit/:id",
     meta: {
       label: "Tasks",
-      icon: <ProjectOutlined />,
+      icon: <ProjectOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />,
     },
   },
 ];

@@ -73,7 +73,7 @@ export const CompanyContactsTable = () => {
       bodyStyle={{ padding: 0 }}
       title={
         <Space size="middle">
-          <TeamOutlined />
+          <TeamOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
           <Text>Contacts</Text>
         </Space>
       }
@@ -111,7 +111,7 @@ export const CompanyContactsTable = () => {
               </Space>
             );
           }}
-          filterIcon={<SearchOutlined />}
+          filterIcon={<SearchOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
           filterDropdown={(props) => (
             <FilterDropdown {...props}>
               <Input placeholder="Search Name" />
@@ -121,7 +121,7 @@ export const CompanyContactsTable = () => {
         <Table.Column
           title="Title"
           dataIndex="jobTitle"
-          filterIcon={<SearchOutlined />}
+          filterIcon={<SearchOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
           filterDropdown={(props) => (
             <FilterDropdown {...props}>
               <Input placeholder="Search Title" />
@@ -154,12 +154,12 @@ export const CompanyContactsTable = () => {
                 <Button
                   size="small"
                   href={`mailto:${record.email}`}
-                  icon={<MailOutlined />}
+                  icon={<MailOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                 />
                 <Button
                   size="small"
                   href={`tel:${record.phone}`}
-                  icon={<PhoneOutlined />}
+                  icon={<PhoneOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                 />
               </Space>
             );

@@ -77,7 +77,7 @@ export const DashboardDealsChart = () => {
             gap: "8px",
           }}
         >
-          <DollarOutlined />
+          <DollarOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
           <Text size="sm" style={{ marginLeft: ".5rem" }}>
             Deals
           </Text>

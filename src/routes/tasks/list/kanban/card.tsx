@@ -53,7 +53,7 @@ export const ProjectCard = ({
       {
         label: "View card",
         key: "1",
-        icon: <EyeOutlined />,
+        icon: <EyeOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />,
         onClick: () => {
           edit("tasks", id, "replace");
         },
@@ -62,7 +62,7 @@ export const ProjectCard = ({
         danger: true,
         label: "Delete card",
         key: "2",
-        icon: <DeleteOutlined />,
+        icon: <DeleteOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />,
         onClick: () => {
           mutate({
             resource: "tasks",
@@ -127,7 +127,7 @@ export const ProjectCard = ({
               type="text"
               shape="circle"
               icon={
-                <MoreOutlined
+                <MoreOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
                   style={{
                     transform: "rotate(90deg)",
                   }}
@@ -159,7 +159,7 @@ export const ProjectCard = ({
           {dueDateOptions && (
             <Tag
               icon={
-                <ClockCircleOutlined
+                <ClockCircleOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
                   style={{
                     fontSize: "12px",
                   }}

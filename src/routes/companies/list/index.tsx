@@ -105,7 +105,7 @@ export const CompanyListPage = ({ children }: React.PropsWithChildren) => {
             dataIndex="name"
             title="Company title"
             defaultFilteredValue={getDefaultFilter("id", filters)}
-            filterIcon={<SearchOutlined />}
+            filterIcon={<SearchOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}/>}
             filterDropdown={(props) => (
               <FilterDropdown {...props}>
                 <Input placeholder="Search Company" />

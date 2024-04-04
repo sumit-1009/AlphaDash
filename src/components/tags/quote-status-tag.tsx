@@ -15,15 +15,15 @@ const variant: Record<
 > = {
   DRAFT: {
     color: "blue",
-    icon: <ExpandOutlined />,
+    icon: <ExpandOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />,
   },
   SENT: {
     color: "cyan",
-    icon: <SendOutlined />,
+    icon: <SendOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />,
   },
   ACCEPTED: {
     color: "green",
-    icon: <CheckCircleOutlined />,
+    icon: <CheckCircleOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />,
   },
 };
 

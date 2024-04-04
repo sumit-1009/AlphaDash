@@ -154,7 +154,7 @@ const variants: {
     secondaryColor: "#BAE0FF",
     icon: (
       <IconWrapper color="#E6F4FF">
-        <ShopOutlined
+        <ShopOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
           className="md"
           style={{
             color: "#1677FF",
@@ -191,7 +191,7 @@ const variants: {
     secondaryColor: "#D9F7BE",
     icon: (
       <IconWrapper color="#F6FFED">
-        <TeamOutlined
+        <TeamOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
           className="md"
           style={{
             color: "#52C41A",
@@ -232,7 +232,7 @@ const variants: {
     secondaryColor: "#FFD8BF",
     icon: (
       <IconWrapper color="#FFF2E8">
-        <AuditOutlined
+        <AuditOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
           className="md"
           style={{
             color: "#FA541C",

@@ -69,7 +69,7 @@ export const KanbanColumn = ({
           </Space>
           <Button
             shape="circle"
-            icon={<PlusOutlined />}
+            icon={<PlusOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
             onClick={onAddClickHandler}
           />
         </Space>
@@ -125,14 +125,14 @@ export const KanbanColumnSkeleton = ({ children }: React.PropsWithChildren) => {
             type="text"
             shape="circle"
             icon={
-              <MoreOutlined
+              <MoreOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
                 style={{
                   transform: "rotate(90deg)",
                 }}
               />
             }
           />
-          <Button disabled shape="circle" icon={<PlusOutlined />} />
+          <Button disabled shape="circle" icon={<PlusOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}/>} />
         </Space>
       </div>
       <div

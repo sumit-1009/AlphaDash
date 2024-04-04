@@ -53,7 +53,7 @@ export const CalendarUpcomingEvents = () => {
             gap: "8px",
           }}
         >
-          <CalendarOutlined />
+          <CalendarOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
           <Text size="sm" style={{ marginLeft: ".7rem" }}>
             Upcoming events
           </Text>

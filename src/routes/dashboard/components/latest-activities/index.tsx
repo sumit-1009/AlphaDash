@@ -89,7 +89,7 @@ export const DashboardLatestActivities = ({ limit = 5 }: Props) => {
             gap: "8px",
           }}
         >
-          <UnorderedListOutlined />
+          <UnorderedListOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
           <Text size="sm" style={{ marginLeft: ".5rem" }}>
             Latest activities
           </Text>

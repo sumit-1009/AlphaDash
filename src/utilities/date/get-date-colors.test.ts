@@ -10,7 +10,7 @@ describe("getDateColors function", () => {
 
   it.each([1, 2, 3])(
     "should return 'warning' if the date is %s days from today",
-    (day) => {
+    (day: number) => {
       const date = dayjs().add(day, "day").format("YYYY-MM-DD");
       expect(getDateColor({ date: date })).toBe("warning");
     },
@@ -21,3 +21,7 @@ describe("getDateColors function", () => {
     expect(getDateColor({ date: date })).toBe("default");
   });
 });
+
+function expect(arg0: string) {
+  throw new Error("Function not implemented.");
+}
