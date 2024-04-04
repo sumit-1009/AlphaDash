@@ -2,7 +2,7 @@ import React from "react";
 
 import { Layout, Space, theme } from "antd";
 
-import { CurrentUser } from "../current-user";
+// import { CurrentUser } from "../current-user";
 
 const { useToken } = theme;
 
@@ -24,7 +24,7 @@ export const Header = () => {
   return (
     <Layout.Header style={headerStyles}>
       <Space align="center" size="middle">
-        <CurrentUser />
+        {/* <CurrentUser /> */}
       </Space>
     </Layout.Header>
   );

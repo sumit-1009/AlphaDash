@@ -41,7 +41,7 @@ export const CurrentUser = () => {
       >
         <Button
           style={{ textAlign: "left" }}
-          icon={<SettingOutlined />}
+          // icon={<SettingOutlined />}
           type="text"
           block
           onClick={() => setOpened(true)}

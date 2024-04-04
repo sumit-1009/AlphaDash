@@ -82,7 +82,7 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
         <Text strong>Account Settings</Text>
         <Button
           type="text"
-          icon={<CloseOutlined />}
+          // icon={<CloseOutlined />}
           onClick={() => closeModal()}
         />
       </div>
